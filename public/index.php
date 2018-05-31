@@ -38,7 +38,8 @@ $di->set(
     'url',
     function() {
         $url = new UrlProvider();
-        $url->setBaseUri('/');
+        // $url->setBaseUri('/');
+        $url->setBaseUri(''); // For development purposes in xampp
         return $url;
     }
 );
